@@ -1,36 +1,65 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Next.js Blog Site
 
-## Getting Started
+A fully responsive **blog platform** built with **Next.js 15**, **NextAuth.js**, and **MongoDB**, featuring **user authentication**, a **dashboard** for content management, and dynamic blog pages.
 
-First, run the development server:
+---
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## Features
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+- ✅ **User Authentication**
+  - Register new users and login via credentials (email & password).  
+  - OAuth login with Google.  
+  - Protected dashboard accessible only to authenticated users.  
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+- ✅ **Dashboard**
+  - Add, edit, delete posts.  
+  - Posts update in real-time using **SWR**.  
+  - Responsive design for mobile, tablet, and desktop.  
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+- ✅ **Public Blog**
+  - List all posts.  
+  - Individual post pages with dynamic routing.  
 
-## Learn More
+- ✅ **Portfolio & About**
+  - Static pages to showcase your work and story.  
 
-To learn more about Next.js, take a look at the following resources:
+- ✅ **Contact Form**
+  - Users can send messages via contact page.  
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- ✅ **Dark/Light Mode Toggle**
+  - Works across the entire website.  
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+- ✅ Fully responsive and optimized for all screen sizes.  
 
-## Deploy on Vercel
+---
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## Tech Stack
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- **Next.js 15** + **React 19** – SSR and CSR  
+- **NextAuth.js** – Authentication (credentials + Google login)  
+- **MongoDB & Mongoose** – Database for users and posts  
+- **SWR** – Client-side data fetching  
+- **Lucide React** – Icons  
+- **bcryptjs** – Password hashing  
+
+---
+
+## Authentication Flow
+
+1. **Register**
+   - New users can create an account via `/dashboard/register`.  
+   - Passwords are hashed with `bcryptjs` before saving to MongoDB.  
+
+2. **Login**
+   - Users can log in with credentials or Google OAuth.  
+   - Authenticated users are redirected to `/dashboard`.  
+
+3. **Protected Dashboard**
+   - Only accessible after authentication.  
+   - Users can manage posts (add/delete).  
+
+---
+
+## Screenshot
+![lamamia](https://github.com/user-attachments/assets/8037760c-2b4c-439b-bd36-202a748007d8)
+
