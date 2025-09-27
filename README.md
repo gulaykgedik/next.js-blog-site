@@ -2,7 +2,6 @@
 
 A fully responsive **blog platform** built with **Next.js 15**, **NextAuth.js**, and **MongoDB**, featuring **user authentication**, a **dashboard** for content management, and dynamic blog pages.
 
----
 
 ## Features
 
@@ -31,7 +30,7 @@ A fully responsive **blog platform** built with **Next.js 15**, **NextAuth.js**,
 
 - ✅ Fully responsive and optimized for all screen sizes.  
 
----
+
 
 ## Tech Stack
 
@@ -42,7 +41,7 @@ A fully responsive **blog platform** built with **Next.js 15**, **NextAuth.js**,
 - **Lucide React** – Icons  
 - **bcryptjs** – Password hashing  
 
----
+
 
 ## Authentication Flow
 
@@ -58,7 +57,7 @@ A fully responsive **blog platform** built with **Next.js 15**, **NextAuth.js**,
    - Only accessible after authentication.  
    - Users can manage posts (add/delete).  
 
----
+
 
 ## Screenshot
 ![lamamia](https://github.com/user-attachments/assets/8037760c-2b4c-439b-bd36-202a748007d8)
